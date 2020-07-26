@@ -1,11 +1,13 @@
 import Hero from 'components/Hero'
 import Layout from 'components/Layout'
+import Paper from 'components/Paper'
 
 const Home = (): JSX.Element => (
   <Layout>
     <Layout.Header>.</Layout.Header>
     <Layout.Body>
       <Hero />
+      <Paper>Hello, here is your paper</Paper>
     </Layout.Body>
   </Layout>
 )
