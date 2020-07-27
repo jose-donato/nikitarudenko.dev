@@ -1,4 +1,10 @@
-import React, { ReactNode, useRef, useState, useEffect } from 'react'
+import React, {
+  ReactNode,
+  useRef,
+  useState,
+  useEffect,
+  MutableRefObject,
+} from 'react'
 
 import { PaperContainer, PaperContent } from './Paper.styled'
 
@@ -11,7 +17,7 @@ const MAX_SCALE = 1
 const SCALE_DIFF = MAX_SCALE - MIN_SCALE
 
 const Paper = ({ children }: Props) => {
-  const paperRef = useRef(null)
+  const paperRef: MutableRefObject<HTMLElement | null> = useRef(null)
   const [scale, setScale] = useState(MIN_SCALE)
 
   useEffect(() => {
@@ -20,7 +26,7 @@ const Paper = ({ children }: Props) => {
   })
 
   function calcScale() {
-    if (paperRef.current) {
+    if (paperRef && paperRef.current) {
       const toTopOfViewport = paperRef.current.getBoundingClientRect().y
       const toTopOfDocument = window.pageYOffset + toTopOfViewport
       const percentsScrolled = (toTopOfViewport / toTopOfDocument) * 100
