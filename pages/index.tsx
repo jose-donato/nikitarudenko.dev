@@ -1,15 +1,7 @@
-import Hero from 'components/Hero'
-import Layout from 'components/Layout'
-import Paper from 'components/Paper'
+import Home from '@pages/Home'
 
-const Home = (): JSX.Element => (
-  <Layout>
-    <Layout.Header>.</Layout.Header>
-    <Layout.Body>
-      <Hero />
-      <Paper>Hello, here is your paper</Paper>
-    </Layout.Body>
-  </Layout>
-)
+const HomePage = () => {
+  return <Home />
+}
 
-export default Home
+export default HomePage

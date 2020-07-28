@@ -2,6 +2,23 @@
   "presets": ["next/babel"],
   "plugins": [
     [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@assets": ["./src/assets"],
+          "@components": ["./src/components"],
+          "@constants": ["./src/constants"],
+          "@context": ["./src/context"],
+          "@hooks": ["./src/hooks"],
+          "@pages": ["./src/pages"],
+          "@styles": ["./src/styles"],
+          "@typings": ["./src/typings"],
+          "@utils": ["./src/utils"]
+        }
+      }
+    ],
+    [
       "styled-components",
       { "ssr": true, "displayName": true, "preprocess": false }
     ]
