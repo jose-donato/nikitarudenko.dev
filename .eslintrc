@@ -37,7 +37,6 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
     "spaced-comment": ["error", "always", { "markers": ["/"] }],
-    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
     "import/no-extraneous-dependencies": [
       "off",
       { "devDependencies": ["**/*.test.ts", "**/*.spec.ts", "tests/*.ts"] }
