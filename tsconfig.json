@@ -38,6 +38,5 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "types/styled-components.d.ts"
   ]
 }

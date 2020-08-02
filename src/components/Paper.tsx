@@ -6,8 +6,6 @@ import React, {
   MutableRefObject,
 } from 'react'
 
-import { PaperContainer, PaperContent } from './Paper.styled'
-
 type Props = {
   children: ReactNode
 }
@@ -36,13 +34,18 @@ const Paper = ({ children }: Props) => {
     }
   }
 
+  const currentScale = scale > MAX_SCALE ? MAX_SCALE : scale
+
   return (
-    <PaperContainer
+    <section
+      style={{
+        transform: `scale3d(${currentScale}, ${currentScale}, 1)`,
+      }}
+      className="p-4 overflow-hidden bg-white rounded-md"
       ref={paperRef}
-      scale={scale > MAX_SCALE ? MAX_SCALE : scale}
     >
-      <PaperContent>{children}</PaperContent>
-    </PaperContainer>
+      <div className="max-w-screen-md mx-auto">{children}</div>
+    </section>
   )
 }
 

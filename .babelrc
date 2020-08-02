@@ -17,10 +17,6 @@
           "@utils": ["./src/utils"]
         }
       }
-    ],
-    [
-      "styled-components",
-      { "ssr": true, "displayName": true, "preprocess": false }
     ]
   ]
 }
