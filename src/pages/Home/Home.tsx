@@ -1,14 +1,15 @@
-import Hero from '@components/Hero'
 import Layout from '@components/Layout'
-import Paper from '@components/Paper'
+
+import HeroSection from './HeroSection'
+import MainSection from './MainSection'
 
 const Home = (): JSX.Element => (
   <Layout>
-    <Layout.Header>.</Layout.Header>
     <Layout.Body>
-      <Hero />
-      <Paper>Hello paper</Paper>
+      <HeroSection />
+      <MainSection />
     </Layout.Body>
+    <Layout.Footer />
   </Layout>
 )
 

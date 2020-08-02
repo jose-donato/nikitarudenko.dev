@@ -1,2 +1,10 @@
 @tailwind base;
 @tailwind utilities;
+
+body {
+  background-color: #fff;
+}
+
+svg {
+  display: inline-block;
+}
