@@ -10,21 +10,22 @@
     "type-check": "tsc --pretty --noEmit",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "yarn lint && yarn type-check && yarn test"
+    "test-all": "npm run lint && npm run type-check && npm run test"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check"
+      "pre-push": "npm run type-check"
     }
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "yarn lint"
+      "eslint --ext ts --ext tsx --ext js"
     ]
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
+    "markdown-to-jsx": "^6.11.4",
     "next": "^9.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -32,6 +33,7 @@
   "devDependencies": {
     "@testing-library/react": "^10.4.7",
     "@types/jest": "^25.1.4",
+    "@types/markdown-to-jsx": "^6.11.1",
     "@types/node": "^13.13.15",
     "@types/react": "^16.9.44",
     "@types/testing-library__react": "^10.0.0",
