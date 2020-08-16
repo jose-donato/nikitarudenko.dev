@@ -11,16 +11,13 @@ const BlogCard = (props: Props) => {
   const { blogPosts } = props
 
   return (
-    <Card className="sm:col-span-2" title="Blog">
+    <Card href="/blog" className="sm:col-span-2" title="Blog">
       <ul className="mt-4">
         {blogPosts.map(({ href, title, date, id, excerpt }) => {
           return (
-            <li
-              key={id}
-              className="p-3 rounded-md font-body hover:bg-yellow-400 hover:bg-opacity-50"
-            >
+            <li key={id}>
               <Link href={href}>
-                <a>
+                <a className="block p-3 transition-colors duration-200 rounded-md font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
                   <div className="flex items-baseline">
                     <div className="text-base font-bold md:text-lg text-mononchrome-900">
                       {title}
