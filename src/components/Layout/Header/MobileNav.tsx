@@ -33,7 +33,7 @@ const MobileNav = () => {
               return (
                 <li
                   key={label}
-                  className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 rounded-md text-mononchrome-700"
+                  className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 text-mononchrome-700"
                 >
                   <Link href={href}>
                     <a>{label}</a>
@@ -50,10 +50,7 @@ const MobileNav = () => {
           backgroundImage:
             'linear-gradient(-225deg, rgba(172, 50, 228, 0.7) 0%, rgba(121, 24, 242, 0.7) 48%, rgba(72, 1, 255, 0.7) 100%)',
         }}
-        className={clsx(
-          'fixed bottom-0 right-0 p-4 bg-gray-700 rounded-tl-lg',
-          isOpen && 'bg-gray-900'
-        )}
+        className="fixed bottom-0 right-0 p-4 bg-gray-700 rounded-tl-lg"
       >
         <MobileNavIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
