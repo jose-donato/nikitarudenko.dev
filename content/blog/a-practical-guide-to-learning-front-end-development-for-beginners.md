@@ -146,7 +146,7 @@ My personal favorites:
 2. [React for beginners](https://reactforbeginners.com/) (paid) by Wes Bos
 3. [React - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux/?couponCode=ACAD_W) (paid) by Academind
 
-I hope you are excited to use your new knowledge on the final projects.
+![Image for post](https://miro.medium.com/max/30/0*svDRmbMBy6k8_vAJ?q=20 =4000x2666)
 
 ## **Now you can build anything you want** 🎉
 
