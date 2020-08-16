@@ -9,7 +9,7 @@ const DesktopNav = () => {
         {links.map(({ href, label }) => {
           return (
             <Link href={href} key={label}>
-              <a className="p-2 mr-4 rounded-md hover:bg-mononchrome-100">
+              <a className="p-2 mr-4 rounded-md hover:bg-mononchrome-100 focus:bg-mononchrome-100">
                 <li>{label}</li>
               </a>
             </Link>

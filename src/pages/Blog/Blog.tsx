@@ -14,7 +14,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
     <Layout.Body
       style={{
         backgroundImage:
-          'linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%)',
+          'linear-gradient(126deg, rgba(215,127,255,1) 0%, rgba(159,82,255,1) 48%, rgba(115,61,255,1) 100%)',
       }}
       className="px-4"
     >
@@ -24,18 +24,15 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
         </h1>
       </div>
 
-      <section className="pb-8 md:pb-16">
+      <section className="min-h-screen pb-8 md:pb-16">
         <div className="max-w-screen-md mx-auto">
-          <Card>
-            <ul>
-              {blogPosts.map(({ href, title, date, id, excerpt }) => {
-                return (
-                  <li
-                    key={id}
-                    className="p-3 rounded-md font-body hover:bg-yellow-400 hover:bg-opacity-50"
-                  >
+          <ul>
+            {blogPosts.map(({ href, title, date, id, excerpt }) => {
+              return (
+                <Card className="mb-4" key={id}>
+                  <li>
                     <Link href={href}>
-                      <a>
+                      <a className="block p-3 transition-colors duration-200 rounded-md cursor-pointer font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
                         <div className="flex items-baseline">
                           <div className="text-base font-bold md:text-lg text-mononchrome-900">
                             {title}
@@ -50,10 +47,10 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
                       </a>
                     </Link>
                   </li>
-                )
-              })}
-            </ul>
-          </Card>
+                </Card>
+              )
+            })}
+          </ul>
         </div>
       </section>
     </Layout.Body>
