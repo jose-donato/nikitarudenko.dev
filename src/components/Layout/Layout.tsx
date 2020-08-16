@@ -7,7 +7,9 @@ import Footer from './Footer'
 import Header from './Header'
 
 const Layout = ({ children, ...props }: TRenderProps) => (
-  <div {...props}>{children}</div>
+  <div className="relative" {...props}>
+    {children}
+  </div>
 )
 
 Layout.Header = Header
