@@ -8,15 +8,9 @@ const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
     <Layout>
       <Layout.Header />
       <Layout.Body>
-        <div
-          style={{
-            backgroundImage:
-              'linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%)',
-          }}
-          className="px-8 py-16 md:py-24 text-mononchrome-700 font-display"
-        >
+        <div className="px-8 py-16 md:py-24 text-mononchrome-700 font-display gradient-light">
           <div className="max-w-screen-lg m-auto text-3xl font-bold text-center md:text-4xl">
-            <h1 className="inline py-2 bg-white md:py-4">
+            <h1 className="inline py-2 bg-white shadow-md md:py-4">
               <span
                 style={{
                   boxDecorationBreak: 'clone',

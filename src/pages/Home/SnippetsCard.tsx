@@ -9,7 +9,7 @@ type Props = {
 
 const SnippetsCard = ({ snippets }: Props) => {
   return (
-    <Card href="/snippets" title="Snippets">
+    <Card className="p-4 md:p-6" href="/snippets" title="Snippets">
       <ul className="mt-4">
         {snippets.map(({ id, title, excerpt, href }) => {
           return (

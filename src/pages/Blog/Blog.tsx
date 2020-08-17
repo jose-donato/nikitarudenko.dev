@@ -11,15 +11,9 @@ type Props = {
 const Blog = ({ blogPosts }: Props): JSX.Element => (
   <Layout>
     <Layout.Header />
-    <Layout.Body
-      style={{
-        backgroundImage:
-          'linear-gradient(126deg, rgba(215,127,255,1) 0%, rgba(159,82,255,1) 48%, rgba(115,61,255,1) 100%)',
-      }}
-      className="px-4"
-    >
+    <Layout.Body className="px-4 gradient-light">
       <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-mononchrome-800 font-display">
-        <h1 className="px-4 text-5xl font-bold bg-yellow-400 font-display">
+        <h1 className="px-4 text-5xl font-bold bg-yellow-400 shadow-md font-display">
           Blog
         </h1>
       </div>
@@ -29,7 +23,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
           <ul>
             {blogPosts.map(({ href, title, date, id, excerpt }) => {
               return (
-                <Card className="mb-4" key={id}>
+                <Card className="mb-4 shadow-md" key={id}>
                   <li>
                     <Link href={href}>
                       <a className="block p-3 transition-colors duration-200 rounded-md cursor-pointer font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">

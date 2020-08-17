@@ -23,17 +23,13 @@ const MobileNav = () => {
             'flex justify-center items-center inset-0 opacity-0 bg-white h-full transition-opacity duration-500',
             isOpen && 'opacity-100'
           )}
-          style={{
-            backgroundImage:
-              'linear-gradient(-225deg, rgba(172, 50, 228, 0.7) 0%, rgba(121, 24, 242, 0.7) 48%, rgba(72, 1, 255, 0.7) 100%)',
-          }}
         >
           <ul className="flex flex-col items-center font-body">
             {links.map(({ href, label }) => {
               return (
                 <li
                   key={label}
-                  className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 text-mononchrome-700"
+                  className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 shadow-md text-mononchrome-700"
                 >
                   <Link href={href}>
                     <a>{label}</a>
@@ -45,13 +41,7 @@ const MobileNav = () => {
         </div>
       </nav>
 
-      <div
-        style={{
-          backgroundImage:
-            'linear-gradient(-225deg, rgba(172, 50, 228, 0.7) 0%, rgba(121, 24, 242, 0.7) 48%, rgba(72, 1, 255, 0.7) 100%)',
-        }}
-        className="fixed bottom-0 right-0 p-4 bg-gray-700 rounded-tl-lg"
-      >
+      <div className="fixed bottom-0 right-0 p-4 rounded-tl-lg shadow-md bg-mononchrome-700">
         <MobileNavIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </>

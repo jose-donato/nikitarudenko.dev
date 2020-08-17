@@ -1,3 +1,4 @@
+import clsx from 'clsx'
 import Link from 'next/link'
 import { ReactNode } from 'react'
 
@@ -13,7 +14,10 @@ const Card = (props: Props) => {
 
   return (
     <div
-      className={`p-4 md:p-6 bg-white rounded-md shadow-sm text-mononchrome-800 ${className}`}
+      className={clsx(
+        'bg-white rounded-md shadow-md text-mononchrome-800 overflow-hidden',
+        className || ''
+      )}
     >
       {title && href && (
         <h3 className="px-2 py-2 text-xl font-bold md:px-3 md:text-2xl font-body">
