@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import { useRouter } from 'next/dist/client/router'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
@@ -8,6 +9,7 @@ import MobileNavIcon from './MobileNavIcon'
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const { pathname } = useRouter()
 
   return (
     <>
@@ -26,16 +28,20 @@ const MobileNav = () => {
         >
           <ul className="flex flex-col items-center font-body">
             {links.map(({ href, label }) => {
-              return (
-                <li
-                  key={label}
-                  className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 shadow-md text-mononchrome-700"
-                >
-                  <Link href={href}>
-                    <a>{label}</a>
-                  </Link>
-                </li>
-              )
+              if (href === pathname) {
+                return
+              } else {
+                return (
+                  <li
+                    key={label}
+                    className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 shadow-md text-mononchrome-700"
+                  >
+                    <Link href={href}>
+                      <a>{label}</a>
+                    </Link>
+                  </li>
+                )
+              }
             })}
           </ul>
         </div>
