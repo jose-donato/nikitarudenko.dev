@@ -13,7 +13,7 @@ const MobileNav = () => {
     <>
       <nav
         className={clsx(
-          'fixed inset-0 h-full',
+          'fixed inset-0 h-full z-40',
           isOpen && 'opacity-100',
           !isOpen && 'pointer-events-none'
         )}
@@ -41,7 +41,7 @@ const MobileNav = () => {
         </div>
       </nav>
 
-      <div className="fixed bottom-0 right-0 p-4 rounded-tl-lg shadow-md bg-mononchrome-700">
+      <div className="fixed bottom-0 right-0 z-40 p-4 rounded-tl-lg shadow-md bg-mononchrome-700">
         <MobileNavIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </>
