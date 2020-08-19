@@ -26,7 +26,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
                 <Card className="mb-4 shadow-md" key={id}>
                   <li>
                     <Link href={href}>
-                      <a className="block p-3 transition-colors duration-200 rounded-md cursor-pointer font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
+                      <a className="block p-5 transition-colors duration-200 rounded-md cursor-pointer font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
                         <div className="flex items-baseline">
                           <div className="text-base font-bold md:text-lg text-mononchrome-900">
                             {title}
