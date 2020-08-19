@@ -7,14 +7,14 @@ type Props = {
   projects: TPRojectPreview[]
 }
 
-const ProjectsCard = ({ projects }: Props) => {
+const LabsCard = ({ projects }: Props) => {
   return (
-    <Card href="/projects" title="Projects">
+    <Card className="p-4 md:p-6" href="/labs" title="Labs">
       <ul className="mt-4">
-        {projects.map(({ title, excerpt, id }) => {
+        {projects.map(({ title, excerpt, href, id }) => {
           return (
             <li key={id}>
-              <Link href={`/projects/${id}`}>
+              <Link href={href}>
                 <a className="block p-3 transition-colors duration-200 rounded-md font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
                   <div className="flex items-center">
                     {/* <div className="mr-2">{emoji}</div> */}
@@ -35,4 +35,4 @@ const ProjectsCard = ({ projects }: Props) => {
   )
 }
 
-export default ProjectsCard
+export default LabsCard
