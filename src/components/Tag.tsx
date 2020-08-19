@@ -9,7 +9,7 @@ const Tag = ({ label, color = 'mononchrome' }: Props) => {
   return (
     <div
       className={clsx(
-        'text inline-block mr-2 text-sm font-bold font-body',
+        'inline text-sm font-bold font-body px-1',
         color && `text-${color}-600`
       )}
     >
