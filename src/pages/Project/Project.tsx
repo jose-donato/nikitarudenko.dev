@@ -28,7 +28,7 @@ const Project = ({
                 <Tag key={t} label={t} />
               ))}
             </div>
-            <div className="grid grid-flow-col gap-2">
+            <div className="grid justify-center grid-flow-col gap-2">
               <GithubLink href="//github.com" />
               <LiveLink href="//google.com" />
             </div>
