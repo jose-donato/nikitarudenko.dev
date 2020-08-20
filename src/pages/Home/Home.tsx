@@ -7,8 +7,8 @@ import {
 
 import BlogCard from './BlogCard'
 import HeroSection from './HeroSection'
+import LabsCard from './LabsCard'
 import MainSection from './MainSection'
-import ProjectsCard from './ProjectsCard'
 import SnippetsCard from './SnippetsCard'
 
 type Props = {
@@ -23,7 +23,7 @@ const Home = ({ blogPosts, projects, snippets }: Props): JSX.Element => (
       <HeroSection />
       <MainSection>
         <BlogCard blogPosts={blogPosts} />
-        <ProjectsCard projects={projects} />
+        <LabsCard projects={projects} />
         <SnippetsCard snippets={snippets} />
       </MainSection>
     </Layout.Body>

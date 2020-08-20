@@ -8,3 +8,11 @@ body {
 svg {
   display: inline-block;
 }
+
+.gradient-light {
+  background: linear-gradient(
+    120deg,
+    rgba(242, 180, 162, 1) 0%,
+    rgba(255, 220, 109, 1) 100%
+  );
+}

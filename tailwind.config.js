@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mononchrome: {
+        monochrome: {
           100: '#e6e6e6',
           200: '#cccccc',
           300: '#b3b3b3',

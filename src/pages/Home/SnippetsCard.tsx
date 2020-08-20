@@ -9,19 +9,19 @@ type Props = {
 
 const SnippetsCard = ({ snippets }: Props) => {
   return (
-    <Card href="/snippets" title="Snippets">
+    <Card className="p-4 md:p-6" href="/snippets" title="Snippets">
       <ul className="mt-4">
         {snippets.map(({ id, title, excerpt, href }) => {
           return (
             <li key={id}>
               <Link href={href}>
-                <a className="block p-3 transition-colors duration-200 rounded-md font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
+                <a className="block p-3 transition-colors duration-200 rounded-md font-body focus:bg-monochrome-100 hover:bg-monochrome-100">
                   <div className="flex items-center">
-                    <div className="text-base font-bold md:text-lg text-mononchrome-900">
+                    <div className="text-base font-bold md:text-lg text-monochrome-900">
                       {title}
                     </div>
                   </div>
-                  <div className="text-sm font-bold md:text-base text-mononchrome-400">
+                  <div className="text-sm font-bold md:text-base text-monochrome-400">
                     {excerpt}
                   </div>
                 </a>
