@@ -1,6 +1,8 @@
+import { useRouter } from 'next/dist/client/router'
 import { createElement, ReactNode } from 'react'
 
 import { TRenderProps } from '@typings/commonPropTypes'
+import slugify from '@utils/slugify'
 
 const fontSizeMap: {
   [x: string]: string
@@ -25,7 +27,6 @@ const Heading = ({ children, variant }: Props) => {
     variant,
     {
       className: `${fontSizeMap[variant]} mt-8 mb-0 font-bold`,
-      foo: 'bar',
     },
     children
   )
@@ -33,6 +34,21 @@ const Heading = ({ children, variant }: Props) => {
 
 const createHeading = (variant: HeadingVariant) => ({
   children,
-}: TRenderProps) => <Heading variant={variant}>{children}</Heading>
+}: TRenderProps) => {
+  const id = slugify(children ? children.toString() : '')
+  const { asPath } = useRouter()
+
+  return (
+    <Heading variant={variant}>
+      <a
+        className="hover:text-indigo-800 hover:underline"
+        href={`${asPath}#${id}`}
+        id={id}
+      >
+        {children}
+      </a>
+    </Heading>
+  )
+}
 
 export default createHeading
