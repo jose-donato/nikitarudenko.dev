@@ -15,7 +15,7 @@ const Card = (props: Props) => {
   return (
     <div
       className={clsx(
-        'bg-white rounded-md shadow-md text-mononchrome-800 overflow-hidden',
+        'bg-white rounded-md shadow-md text-monochrome-800 overflow-hidden',
         className || ''
       )}
     >

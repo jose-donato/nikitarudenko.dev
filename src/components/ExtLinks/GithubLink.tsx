@@ -9,7 +9,7 @@ type Props = {
 const GithubLink = ({ href }: Props) => {
   return (
     <ExtLink
-      className="bg-mononchrome-700"
+      className="bg-monochrome-700"
       href={href}
       icon={<GithubIcon />}
       label="Github"

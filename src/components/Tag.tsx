@@ -5,7 +5,7 @@ type Props = {
   color?: string
 }
 
-const Tag = ({ label, color = 'mononchrome' }: Props) => {
+const Tag = ({ label, color = 'monochrome' }: Props) => {
   return (
     <div
       className={clsx(

@@ -4,7 +4,7 @@ import { HeartIcon, ReactIcon, TriangleIcon } from '@components/SVG'
 
 const HeroSection = (): JSX.Element => {
   return (
-    <section className="px-2 py-32 lg:px-6 text-mononchrome-800 font-display">
+    <section className="px-2 py-32 lg:px-6 text-monochrome-800 font-display">
       <h1 className="text-4xl font-bold text-center md:text-5xl">
         <span>Hey! My name is </span>
         <Link href="/about">

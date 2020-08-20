@@ -13,7 +13,7 @@ const Labs = ({ projects }: Props): JSX.Element => (
   <Layout>
     <Layout.Header />
     <Layout.Body className="px-4 gradient-light">
-      <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-mononchrome-800">
+      <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-monochrome-800">
         <h1 className="px-4 text-5xl font-bold duration-200 transform bg-yellow-400 shadow-md select-none font-display">
           Labs
         </h1>
@@ -32,10 +32,10 @@ const Labs = ({ projects }: Props): JSX.Element => (
                     <Link href={href}>
                       <a className="">
                         <div className="flex flex-col p-5">
-                          <div className="text-base font-bold md:text-lg text-mononchrome-900">
+                          <div className="text-base font-bold md:text-lg text-monochrome-900">
                             {title}
                           </div>
-                          <div className="mt-1 text-sm font-bold md:mt-2 md:text-base text-mononchrome-400">
+                          <div className="mt-1 text-sm font-bold md:mt-2 md:text-base text-monochrome-400">
                             {excerpt}
                           </div>
                           <div className="mt-4 ml-auto">

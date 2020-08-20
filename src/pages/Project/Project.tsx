@@ -17,7 +17,7 @@ const Project = ({
     <Layout>
       <Layout.Header />
       <Layout.Body>
-        <div className="flex flex-col px-8 pt-16 md:pt-24 text-mononchrome-700 font-display gradient-light">
+        <div className="flex flex-col px-8 pt-16 md:pt-24 text-monochrome-700 font-display gradient-light">
           <div className="max-w-screen-lg m-auto text-3xl font-bold text-center md:text-4xl">
             <h1 className="inline py-2 bg-white shadow-md md:py-4">
               <span
@@ -45,7 +45,7 @@ const Project = ({
         </div>
 
         <section className="p-4 bg-white">
-          <article className="max-w-screen-md pt-2 mx-auto text-base md:pt-12 font-body text-mononchrome-700">
+          <article className="max-w-screen-md pt-2 mx-auto text-base md:pt-12 font-body text-monochrome-700">
             <Markdown options={options}>{content}</Markdown>
           </article>
         </section>

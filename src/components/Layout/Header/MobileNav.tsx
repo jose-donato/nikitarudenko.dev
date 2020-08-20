@@ -34,7 +34,7 @@ const MobileNav = () => {
                 return (
                   <li
                     key={label}
-                    className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 shadow-md text-mononchrome-700"
+                    className="inline-block p-2 mb-4 text-2xl font-bold bg-yellow-400 shadow-md text-monochrome-700"
                   >
                     <Link href={href}>
                       <a>{label}</a>
@@ -47,7 +47,7 @@ const MobileNav = () => {
         </div>
       </nav>
 
-      <div className="fixed bottom-0 right-0 z-40 p-4 rounded-tl-lg shadow-md bg-mononchrome-700">
+      <div className="fixed bottom-0 right-0 z-40 p-4 rounded-tl-lg shadow-md bg-monochrome-700">
         <MobileNavIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </>

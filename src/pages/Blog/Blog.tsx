@@ -12,7 +12,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
   <Layout>
     <Layout.Header />
     <Layout.Body className="px-4 gradient-light">
-      <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-mononchrome-800 font-display">
+      <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-monochrome-800 font-display">
         <h1 className="px-4 text-5xl font-bold bg-yellow-400 shadow-md font-display">
           Blog
         </h1>
@@ -26,16 +26,16 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
                 <Card className="mb-4 shadow-md" key={id}>
                   <li>
                     <Link href={href}>
-                      <a className="block p-5 transition-colors duration-200 rounded-md cursor-pointer font-body focus:bg-mononchrome-100 hover:bg-mononchrome-100">
+                      <a className="block p-5 transition-colors duration-200 rounded-md cursor-pointer font-body focus:bg-monochrome-100 hover:bg-monochrome-100">
                         <div className="flex items-baseline">
-                          <div className="text-base font-bold md:text-lg text-mononchrome-900">
+                          <div className="text-base font-bold md:text-lg text-monochrome-900">
                             {title}
                           </div>
-                          <div className="hidden ml-auto text-sm font-bold md:block font-body text-mononchrome-400">
+                          <div className="hidden ml-auto text-sm font-bold md:block font-body text-monochrome-400">
                             {new Date(date).toLocaleDateString('en-US')}
                           </div>
                         </div>
-                        <div className="mt-1 text-sm font-bold md:mt-2 md:text-base text-mononchrome-400">
+                        <div className="mt-1 text-sm font-bold md:mt-2 md:text-base text-monochrome-400">
                           {excerpt}
                         </div>
                       </a>
