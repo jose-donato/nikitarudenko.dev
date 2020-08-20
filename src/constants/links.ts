@@ -12,8 +12,8 @@ const links = [
     href: '/labs',
   },
   {
-    label: 'Snippets',
-    href: '/',
+    label: 'Notepad',
+    href: '/notepad',
   },
   {
     label: 'About',

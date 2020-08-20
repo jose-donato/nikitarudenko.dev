@@ -7,9 +7,9 @@ type Props = {
   snippets: TSnippetPreview[]
 }
 
-const SnippetsCard = ({ snippets }: Props) => {
+const NotepadCard = ({ snippets }: Props) => {
   return (
-    <Card className="p-4 md:p-6" href="/snippets" title="Snippets">
+    <Card className="p-4 md:p-6" href="/notepad" title="Notepad">
       <ul className="mt-4">
         {snippets.map(({ id, title, excerpt, href }) => {
           return (
@@ -34,4 +34,4 @@ const SnippetsCard = ({ snippets }: Props) => {
   )
 }
 
-export default SnippetsCard
+export default NotepadCard

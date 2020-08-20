@@ -1,19 +1,16 @@
 import Markdown from 'markdown-to-jsx'
 
-import { GithubLink, LiveLink } from '@components/ExtLinks'
 import Layout from '@components/Layout'
 import options from '@components/MarkdownContent'
 import Tag from '@components/Tag'
 import Title from '@components/Title'
-import { TProject } from '@typings/contentTypes'
+import { TSnippet } from '@typings/contentTypes'
 
 type Props = {
-  project: TProject & { content: string }
+  snippet: TSnippet & { content: string }
 }
 
-const Project = ({
-  project: { content, title, technologies },
-}: Props): JSX.Element => {
+const Snippet = ({ snippet: { content, title, tags } }: Props): JSX.Element => {
   return (
     <Layout>
       <Layout.Header />
@@ -24,13 +21,9 @@ const Project = ({
           </div>
           <div className="grid grid-flow-row gap-2 px-8 py-2 mx-auto mt-16 bg-white rounded-t-md">
             <div className="text-center">
-              {technologies.map((t) => (
+              {tags.map((t) => (
                 <Tag key={t} label={t} />
               ))}
-            </div>
-            <div className="grid justify-center grid-flow-col gap-2">
-              <GithubLink href="//github.com" />
-              <LiveLink href="//google.com" />
             </div>
           </div>
         </div>
@@ -46,4 +39,4 @@ const Project = ({
   )
 }
 
-export default Project
+export default Snippet

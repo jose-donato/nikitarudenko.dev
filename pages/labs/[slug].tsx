@@ -8,7 +8,7 @@ type Props = {
   project: TProject & { content: string }
 }
 
-const BlogPostPage = (props: Props) => {
+const ProjectPage = (props: Props) => {
   const { project } = props
 
   return (
@@ -50,4 +50,4 @@ export async function getStaticPaths() {
   }
 }
 
-export default BlogPostPage
+export default ProjectPage

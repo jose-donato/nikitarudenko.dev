@@ -1,4 +1,5 @@
 import Blockquote from './Blockquote'
+import CodeBlock from './CodeBlock'
 import createHeading from './Heading'
 import Image from './Image'
 import Link from './Link'
@@ -20,6 +21,7 @@ const options = {
     h5: { component: createHeading('h5') },
     h6: { component: createHeading('h6') },
     blockquote: { component: Blockquote },
+    code: { component: CodeBlock },
   },
 }
 
