@@ -2,6 +2,7 @@ import Markdown from 'markdown-to-jsx'
 
 import Layout from '@components/Layout'
 import options from '@components/MarkdownContent'
+import Title from '@components/Title'
 
 const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
   return (
@@ -9,18 +10,8 @@ const BlogPost = ({ blogPost: { content, title } }: any): JSX.Element => {
       <Layout.Header />
       <Layout.Body>
         <div className="px-8 py-16 md:py-24 text-monochrome-700 font-display gradient-light">
-          <div className="max-w-screen-lg m-auto text-3xl font-bold text-center md:text-4xl">
-            <h1 className="inline py-2 bg-white shadow-md md:py-4">
-              <span
-                style={{
-                  boxDecorationBreak: 'clone',
-                  WebkitBoxDecorationBreak: 'clone',
-                }}
-                className="inline p-2 bg-yellow-400 bg-opacity-75 md:p-4"
-              >
-                {title}
-              </span>
-            </h1>
+          <div className="max-w-screen-lg m-auto text-center">
+            <Title>{title}</Title>
           </div>
         </div>
 

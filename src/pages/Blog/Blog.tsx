@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import Card from '@components/Card'
 import Layout from '@components/Layout'
+import Title from '@components/Title'
 import { TBlogPostPreview } from '@typings/contentTypes'
 
 type Props = {
@@ -12,10 +13,8 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
   <Layout>
     <Layout.Header />
     <Layout.Body className="px-4 gradient-light">
-      <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-monochrome-800 font-display">
-        <h1 className="px-4 text-5xl font-bold bg-yellow-400 shadow-md font-display">
-          Blog
-        </h1>
+      <div className="px-2 py-24 text-center lg:px-6 text-monochrome-800">
+        <Title>Blog</Title>
       </div>
 
       <section className="min-h-screen pb-8 md:pb-16">

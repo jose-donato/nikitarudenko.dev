@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Card from '@components/Card'
 import Layout from '@components/Layout'
 import Tag from '@components/Tag'
+import Title from '@components/Title'
 import { TProject } from '@typings/contentTypes'
 
 type Props = {
@@ -13,10 +14,8 @@ const Labs = ({ projects }: Props): JSX.Element => (
   <Layout>
     <Layout.Header />
     <Layout.Body className="px-4 gradient-light">
-      <div className="flex items-center justify-center px-2 py-24 lg:px-6 text-monochrome-800">
-        <h1 className="px-4 text-5xl font-bold duration-200 transform bg-yellow-400 shadow-md select-none font-display">
-          Labs
-        </h1>
+      <div className="px-2 py-24 text-center lg:px-6 text-monochrome-800">
+        <Title>Labs</Title>
       </div>
 
       <section className="min-h-screen pb-8 md:pb-16">
