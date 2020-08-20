@@ -60,7 +60,7 @@ async function getSnippetsPreview() {
     .map(({ id, data: { title, excerpt } }) => {
       return {
         id,
-        href: `/snippets/${id}`,
+        href: `/notepad/${id}`,
         title,
         excerpt,
       }
