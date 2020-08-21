@@ -1,4 +1,55 @@
 ---
 label: About
 hide_body: false
-fields: []
+fields:
+- name: bio
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Bio
+- name: avatar
+  type: file
+  config:
+    maxSize: 64
+  label: Avatar
+- name: my_stack
+  type: field_group_list
+  fields:
+  - name: technology
+    type: text
+    config:
+      required: true
+    label: Technology
+  - name: color
+    type: include
+    config: {}
+    template: color
+    label: Color
+  config:
+    min: 1
+    max: 
+    labelField: technology
+  label: My Stack
+- name: actively_learning
+  type: field_group_list
+  fields:
+  - name: techonology
+    type: text
+    config:
+      required: true
+      min: 1
+    label: Techonology
+  - name: color
+    type: include
+    config: {}
+    template: color
+    label: Color
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Actively learning
