@@ -1,4 +1,26 @@
 ---
 label: Color
 hide_body: true
-fields: []
+fields:
+- name: color_name
+  type: select
+  default: gray
+  config:
+    required: true
+    options:
+    - gray
+    - orange
+    - yellow
+    - green
+    - teal
+    - blue
+    - indigo
+    - purple
+    - pink
+    - red
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color name
