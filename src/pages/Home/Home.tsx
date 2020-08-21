@@ -7,9 +7,9 @@ import {
 
 import BlogCard from './BlogCard'
 import HeroSection from './HeroSection'
+import LabsCard from './LabsCard'
 import MainSection from './MainSection'
-import ProjectsCard from './ProjectsCard'
-import SnippetsCard from './SnippetsCard'
+import NotepadCard from './NotepadCard'
 
 type Props = {
   blogPosts: TBlogPostPreview[]
@@ -23,8 +23,8 @@ const Home = ({ blogPosts, projects, snippets }: Props): JSX.Element => (
       <HeroSection />
       <MainSection>
         <BlogCard blogPosts={blogPosts} />
-        <ProjectsCard projects={projects} />
-        <SnippetsCard snippets={snippets} />
+        <LabsCard projects={projects} />
+        <NotepadCard snippets={snippets} />
       </MainSection>
     </Layout.Body>
     <Layout.Footer />

@@ -47,7 +47,7 @@ async function getProjectsPreview() {
     .map(({ id, data: { title, excerpt } }) => {
       return {
         id,
-        href: `/projects/${id}`,
+        href: `/labs/${id}`,
         title,
         excerpt,
       }
@@ -60,7 +60,7 @@ async function getSnippetsPreview() {
     .map(({ id, data: { title, excerpt } }) => {
       return {
         id,
-        href: `/snippets/${id}`,
+        href: `/notepad/${id}`,
         title,
         excerpt,
       }

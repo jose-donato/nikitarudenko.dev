@@ -8,12 +8,12 @@ const links = [
     href: '/blog',
   },
   {
-    label: 'Projects',
-    href: '/projects',
+    label: 'Labs',
+    href: '/labs',
   },
   {
-    label: 'Snippets',
-    href: '/',
+    label: 'Notepad',
+    href: '/notepad',
   },
   {
     label: 'About',
