@@ -42,3 +42,10 @@ export type TSnippetPreview = Pick<
   TSnippet,
   'id' | 'href' | 'title' | 'excerpt'
 >
+
+export type TAboutPageData = {
+  bio: string
+  avatar: string
+  learning: string
+  stack: string[]
+}
