@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import Snippet from '@pages/Snippet'
 import { TSnippet } from '@typings/contentTypes'
 import { getContentData, getPageSlugs } from '@utils/markdownParser'
+import Snippet from '@views/Snippet'
 
 type Props = {
   snippet: TSnippet & { content: string }

@@ -1,12 +1,12 @@
 import Head from 'next/head'
 
-import Home from '@pages/Home'
 import {
   TBlogPostPreview,
   TPRojectPreview,
   TSnippetPreview,
 } from '@typings/contentTypes'
 import { getContentDataList } from '@utils/markdownParser'
+import Home from '@views/Home'
 
 type Props = {
   blogPosts: TBlogPostPreview[]

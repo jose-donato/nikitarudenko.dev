@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import Notepad from '@pages/Notepad'
 import { TSnippet } from '@typings/contentTypes'
 import { getContentDataList } from '@utils/markdownParser'
+import Notepad from '@views/Notepad'
 
 type Props = {
   snippets: TSnippet[]

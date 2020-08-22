@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import Project from '@pages/Project'
 import { TProject } from '@typings/contentTypes'
 import { getContentData, getPageSlugs } from '@utils/markdownParser'
+import Project from '@views/Project'
 
 type Props = {
   project: TProject & { content: string }

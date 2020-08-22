@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import BlogPost from '@pages/BlogPost'
 import { TBlogPost } from '@typings/contentTypes'
 import { getContentData, getPageSlugs } from '@utils/markdownParser'
+import BlogPost from '@views/BlogPost'
 
 type Props = {
   blogPost: TBlogPost

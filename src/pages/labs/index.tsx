@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import Labs from '@pages/Labs'
 import { TProject } from '@typings/contentTypes'
 import { getContentDataList } from '@utils/markdownParser'
+import Labs from '@views/Labs'
 
 type Props = {
   projects: TProject[]

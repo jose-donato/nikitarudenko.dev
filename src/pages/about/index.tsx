@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import About from '@pages/About'
 import { TAboutPageData } from '@typings/contentTypes'
 import { getContentData } from '@utils/markdownParser'
+import About from '@views/About'
 
 type Props = {
   data: TAboutPageData
