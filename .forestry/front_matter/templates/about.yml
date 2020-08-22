@@ -1,0 +1,33 @@
+---
+label: About
+hide_body: true
+fields:
+- name: bio
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Bio
+- name: avatar
+  type: file
+  config:
+    maxSize: 64
+  label: Avatar
+- name: stack
+  type: tag_list
+  default: []
+  label: Stack
+- name: learning
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Learning
+pages:
+- content/pages/about.md
