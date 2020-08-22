@@ -35,24 +35,14 @@ fields:
     max: 
     labelField: technology
   label: My Stack
-- name: actively_learning
-  type: field_group_list
-  fields:
-  - name: techonology
-    type: text
-    config:
-      required: true
-      min: 1
-    label: Techonology
-  - name: color
-    type: include
-    config: {}
-    template: color
-    label: Color
+- name: learning
+  type: textarea
+  default: ''
   config:
-    min: 
-    max: 
-    labelField: 
-  label: Actively learning
+    required: true
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Learning
 pages:
 - about.md
