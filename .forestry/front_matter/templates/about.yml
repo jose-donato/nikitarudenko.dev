@@ -45,4 +45,4 @@ fields:
       format: markdown
   label: Learning
 pages:
-- about.md
+- content/about/about.md

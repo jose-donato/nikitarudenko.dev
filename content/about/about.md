@@ -29,11 +29,7 @@ my_stack:
   color_name: orange
 - technology: Tailwind
   color_name: teal
-actively_learning:
-- techonology: JAMstack
-  color_name: teal
-- techonology: GraphQL
-  color_name: purple
+actively_learning: []
 learning: Currently, I'm excited by the JAMstack world. I experiment with combining
   **Next.js** and different API sources and building lightweight full-stack apps.
 
