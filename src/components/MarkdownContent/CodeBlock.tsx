@@ -1,4 +1,4 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 
 import { TRenderProps } from '@typings/commonPropTypes'
 
