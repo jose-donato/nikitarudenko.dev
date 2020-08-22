@@ -32,5 +32,17 @@ my_stack:
 actively_learning: []
 learning: Currently, I'm excited by the JAMstack world. I experiment with combining
   **Next.js** and different API sources and building lightweight full-stack apps.
+stack:
+- React
+- Next.js
+- Redux
+- Typescript
+- Node.js
+- Express
+- Sass
+- Docker
+- CircleCI
+- styled-components
+- Tailwind
 
 ---
