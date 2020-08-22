@@ -6,7 +6,12 @@ import codeTheme from './codeTheme'
 
 const CodeBlock = ({ children }: TRenderProps) => {
   return (
-    <SyntaxHighlighter language="jsx" style={codeTheme}>
+    <SyntaxHighlighter
+      language="jsx"
+      style={codeTheme}
+      showLineNumbers
+      lineNumberStyle={{ color: '#495162', paddingRight: '16px' }}
+    >
       {children}
     </SyntaxHighlighter>
   )
