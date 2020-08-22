@@ -4,10 +4,10 @@ import { TRenderProps } from '@typings/commonPropTypes'
 
 import codeTheme from './codeTheme'
 
-const CodeBlock = ({ children }: TRenderProps) => {
+const CodeBlock = ({ children, className }: TRenderProps) => {
   return (
     <SyntaxHighlighter
-      language="jsx"
+      language={className && className.replace(/lang-/, '')}
       style={codeTheme}
       showLineNumbers
       lineNumberStyle={{ color: '#495162', paddingRight: '16px' }}
