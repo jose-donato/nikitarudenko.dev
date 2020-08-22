@@ -5,9 +5,9 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content/about
+  path: cotnent/pages
   label: About
-  create: all
+  create: documents
   match: "**/*"
 - type: directory
   path: content/snippets
