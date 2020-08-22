@@ -1,21 +1,11 @@
-import clsx from 'clsx'
-
 type Props = {
   label: string
-  color?: string
 }
 
-const Tag = ({ label, color = 'monochrome' }: Props) => {
-  return (
-    <div
-      className={clsx(
-        'inline text-sm font-bold font-body px-1',
-        color && `text-${color}-600`
-      )}
-    >
-      #{label}
-    </div>
-  )
-}
+const Tag = ({ label }: Props) => (
+  <div className="inline px-1 m-1 text-sm font-bold border-2 border-opacity-50 rounded-md font-body text-monochrome-700 border-monochrome-700">
+    {label}
+  </div>
+)
 
 export default Tag
