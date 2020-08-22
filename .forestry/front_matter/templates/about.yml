@@ -54,3 +54,5 @@ fields:
     max: 
     labelField: 
   label: Actively learning
+pages:
+- about.md
