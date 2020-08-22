@@ -1,7 +1,8 @@
 ---
 bio: I am a **frontend developer** with some skills in a Node.js-driven backend world.
-  I always loved bringing a great experience to users. Fortunately, one day it became
-  my profession. My best friends in this occupation are **React** and **Next.js.**
+  I always loved bringing a great experience to users, this is what helps your creation
+  to stand out. Fortunately, one day it became my profession. My best friends in this
+  occupation are **React** and **Next.js.**
 avatar: "/public/uploads/avatar.jpg"
 my_stack:
 - color_name: blue
@@ -33,5 +34,7 @@ actively_learning:
   color_name: teal
 - techonology: GraphQL
   color_name: purple
+learning: Currently, I'm excited by the JAMstack world. I experiment with combining
+  **Next.js** and different API sources and building lightweight full-stack apps.
 
 ---
