@@ -24,7 +24,7 @@ const About = ({ data }: Props): JSX.Element => {
                 <div className="col-span-2 font-body">
                   <Markdown options={options}>{bio}</Markdown>
                 </div>
-                <div className="hidden w-32 h-32 m-auto sm:block">
+                <div className="hidden w-32 h-32 m-auto md:block">
                   <img
                     className="overflow-hidden rounded-md"
                     src={avatar}
