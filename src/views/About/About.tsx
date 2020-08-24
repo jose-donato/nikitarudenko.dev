@@ -1,4 +1,5 @@
 import Layout from '@components/Layout'
+import SocialBlock from '@components/SocialBlock'
 import { TAboutPageData } from '@typings/contentTypes'
 
 import BioCard from './BioCard'
@@ -21,6 +22,7 @@ const About = ({ data }: Props): JSX.Element => {
             <BioCard avatar={avatar} bio={bio} />
             <StackCard stack={stack} />
             <LearningCard learning={learning} />
+            <SocialBlock />
           </div>
         </section>
       </Layout.Body>
