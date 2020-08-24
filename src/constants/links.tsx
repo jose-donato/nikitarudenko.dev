@@ -1,34 +1,35 @@
-import houseEmoji from '@iconify/icons-noto/house'
-import microscopeEmoji from '@iconify/icons-noto/microscope'
-import notebookEmoji from '@iconify/icons-noto/notebook-with-decorative-cover'
-import wavingHandEmoji from '@iconify/icons-noto/waving-hand'
-import writingHandEmoji from '@iconify/icons-noto/writing-hand'
-import { InlineIcon } from '@iconify/react'
+import house from '@iconify/icons-noto/house'
+import microscope from '@iconify/icons-noto/microscope'
+import notebook from '@iconify/icons-noto/notebook-with-decorative-cover'
+import wavingHand from '@iconify/icons-noto/waving-hand'
+import writingHand from '@iconify/icons-noto/writing-hand'
+
+import { IconifyEmoji } from '@components/SVG'
 
 const LINKS = [
   {
     label: 'Home',
-    emoji: <InlineIcon icon={houseEmoji} />,
+    emoji: <IconifyEmoji icon={house} height={20} />,
     href: '/',
   },
   {
     label: 'Blog',
-    emoji: <InlineIcon icon={writingHandEmoji} />,
+    emoji: <IconifyEmoji icon={writingHand} height={20} />,
     href: '/blog',
   },
   {
     label: 'Labs',
-    emoji: <InlineIcon icon={microscopeEmoji} />,
+    emoji: <IconifyEmoji icon={microscope} height={20} />,
     href: '/labs',
   },
   {
     label: 'Notepad',
-    emoji: <InlineIcon icon={notebookEmoji} />,
+    emoji: <IconifyEmoji icon={notebook} height={20} />,
     href: '/notepad',
   },
   {
     label: 'About',
-    emoji: <InlineIcon icon={wavingHandEmoji} />,
+    emoji: <IconifyEmoji icon={wavingHand} height={20} />,
     href: '/about',
   },
 ]
