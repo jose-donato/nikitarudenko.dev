@@ -10,7 +10,8 @@
     "type-check": "tsc --pretty --noEmit",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest",
-    "test-all": "npm run lint && npm run type-check && npm run test"
+    "test-all": "npm run lint && npm run type-check && npm run test",
+    "analyze": "ANALYZE=true npm run build"
   },
   "husky": {
     "hooks": {
@@ -37,6 +38,7 @@
     "react-syntax-highlighter": "^13.5.1"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^9.5.2",
     "@testing-library/react": "^10.4.7",
     "@types/jest": "^25.1.4",
     "@types/markdown-to-jsx": "^6.11.1",
