@@ -17,6 +17,7 @@ svg {
   );
 }
 
-.hover-bg-grayout:hover {
+.hover-bg-grayout:hover,
+.hover-bg-grayout:active {
   @apply bg-gray-200 transform transition duration-200
 }

@@ -15,7 +15,7 @@ const NotepadCard = ({ snippets }: Props) => {
           return (
             <li key={id}>
               <Link href={href}>
-                <a className="block p-3 transition-colors duration-200 rounded-md font-body focus:bg-monochrome-100 hover:bg-monochrome-100">
+                <a className="block p-3 transition-colors duration-200 rounded-md font-body hover-bg-grayout">
                   <div className="flex items-center">
                     <div className="text-base font-bold md:text-lg text-monochrome-900">
                       {title}
