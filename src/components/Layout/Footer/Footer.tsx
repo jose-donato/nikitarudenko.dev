@@ -1,25 +1,14 @@
-import { ReactNode } from 'react'
+import clsx from 'clsx'
 
 import { TSpreadProps } from '@typings/commonPropTypes'
 
-const FooterLink = ({
-  children,
-  className,
-  href,
-}: {
-  children: ReactNode
-  href: string
-  className?: string
-}) => {
-  return (
-    <a className={`font-bold hover:text-white ${className}`} href={href}>
-      {children}
-    </a>
-  )
-}
+import FooterLink from './FooterLink'
 
 const Footer = ({ className = '', ...props }: TSpreadProps) => (
-  <footer className={`border-t border-monochrome-300 ${className}`} {...props}>
+  <footer
+    className={clsx('border-t-2 border-monochrome-100', className)}
+    {...props}
+  >
     <div className="flex flex-col justify-center max-w-screen-xl px-4 py-4 mx-auto bg-white sm:flex-row sm:items-center sm:justify-evenly md:py-8 md:px-16 font-body text-monochrome-800">
       <div className="text-sm md:text-base">
         Made using{' '}
