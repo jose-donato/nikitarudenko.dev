@@ -1,3 +1,5 @@
+import Markdown from 'markdown-to-jsx'
+
 import Blockquote from './Blockquote'
 import CodeBlock from './CodeBlock'
 import createHeading from './Heading'
@@ -25,4 +27,10 @@ const options = {
   },
 }
 
-export default options
+type Props = { content: string }
+
+function MarkdownContent({ content }: Props) {
+  return <Markdown options={options}>{content}</Markdown>
+}
+
+export default MarkdownContent
