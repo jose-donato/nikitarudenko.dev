@@ -9,11 +9,13 @@ function HomeNavigation() {
       {LINKS.slice(1, Infinity).map(({ label, href, emoji }) => (
         <Card
           key={label}
-          className="text-sm font-bold md:text-lg font-body hover-bg-grayout"
+          className="text-sm font-bold md:text-xl font-body hover-bg-grayout"
         >
           <Link href={href}>
             <a className="flex flex-col items-center justify-center p-2 sm:flex-row sm:p-4">
-              <span className="sm:mr-2">{emoji}</span>
+              <span className="flex items-center justify-center sm:mr-2">
+                {emoji}
+              </span>
               <span>{label}</span>
             </a>
           </Link>

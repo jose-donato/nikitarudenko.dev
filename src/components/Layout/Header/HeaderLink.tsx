@@ -22,7 +22,7 @@ function HeaderLink({ label, href, emoji }: Props) {
         `/${pathname.split('/')[1]}` === href && 'bg-gray-200'
       )}
     >
-      <span className="mr-1">{emoji}</span>
+      <span className="flex items-center justify-center mr-1">{emoji}</span>
       <span>{label}</span>
     </NavLink>
   )

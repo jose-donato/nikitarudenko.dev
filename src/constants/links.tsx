@@ -9,27 +9,27 @@ import { IconifyEmoji } from '@components/SVG'
 const LINKS = [
   {
     label: 'Home',
-    emoji: <IconifyEmoji icon={house} height={20} />,
+    emoji: <IconifyEmoji icon={house} />,
     href: '/',
   },
   {
     label: 'Blog',
-    emoji: <IconifyEmoji icon={writingHand} height={20} />,
+    emoji: <IconifyEmoji icon={writingHand} />,
     href: '/blog',
   },
   {
     label: 'Labs',
-    emoji: <IconifyEmoji icon={microscope} height={20} />,
+    emoji: <IconifyEmoji icon={microscope} />,
     href: '/labs',
   },
   {
     label: 'Notepad',
-    emoji: <IconifyEmoji icon={notebook} height={20} />,
+    emoji: <IconifyEmoji icon={notebook} />,
     href: '/notepad',
   },
   {
     label: 'About',
-    emoji: <IconifyEmoji icon={wavingHand} height={20} />,
+    emoji: <IconifyEmoji icon={wavingHand} />,
     href: '/about',
   },
 ]
