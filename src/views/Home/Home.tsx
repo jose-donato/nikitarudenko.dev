@@ -1,4 +1,5 @@
 import Layout from '@components/Layout'
+import SocialBlock from '@components/SocialBlock'
 import {
   TBlogPostPreview,
   TPRojectPreview,
@@ -27,6 +28,7 @@ const Home = ({ blogPosts, projects, snippets }: Props): JSX.Element => (
         <BlogCard blogPosts={blogPosts} />
         <LabsCard projects={projects} />
         <NotepadCard snippets={snippets} />
+        <SocialBlock />
       </MainSection>
     </Layout.Body>
     <Layout.Footer />
