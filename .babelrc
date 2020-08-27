@@ -14,7 +14,8 @@
           "@pages": ["./src/pages"],
           "@styles": ["./src/styles"],
           "@typings": ["./src/typings"],
-          "@utils": ["./src/utils"]
+          "@utils": ["./src/utils"],
+          "@views": ["./src/views"]
         }
       }
     ]

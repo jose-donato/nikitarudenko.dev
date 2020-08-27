@@ -26,10 +26,10 @@
       "@constants/*": ["./src/constants/*"],
       "@context/*": ["./src/context/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@pages/*": ["./src/pages/*"],
       "@styles/*": ["./src/styles/*"],
       "@typings/*": ["./src/typings/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*"],
+      "@views/*": ["src/views/*"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],
