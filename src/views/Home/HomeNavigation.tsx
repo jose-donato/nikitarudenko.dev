@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
 import Card from '@components/Card'
-import LINKS from '@constants/links'
+import { INTERNAL_LINKS } from '@constants/links'
 
 function HomeNavigation() {
   return (
     <div className="grid content-center justify-center grid-cols-4 col-span-1 gap-2 md:gap-5 sm:col-span-2">
-      {LINKS.slice(1, Infinity).map(({ label, href, emoji }) => (
+      {INTERNAL_LINKS.slice(1, Infinity).map(({ label, href, emoji }) => (
         <Card
           key={label}
           className="text-sm font-bold md:text-xl font-body hover-bg-grayout"

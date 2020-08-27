@@ -4,9 +4,15 @@ import notebook from '@iconify/icons-noto/notebook-with-decorative-cover'
 import wavingHand from '@iconify/icons-noto/waving-hand'
 import writingHand from '@iconify/icons-noto/writing-hand'
 
-import { IconifyEmoji } from '@components/SVG'
+import {
+  IconifyEmoji,
+  EmailIcon,
+  GithubIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from '@components/SVG'
 
-const LINKS = [
+const INTERNAL_LINKS = [
   {
     label: 'Home',
     emoji: <IconifyEmoji icon={house} />,
@@ -34,4 +40,27 @@ const LINKS = [
   },
 ]
 
-export default LINKS
+const SOCIAL_LINKS = [
+  {
+    label: 'Twitter',
+    emoji: <TwitterIcon />,
+    href: '/',
+  },
+  {
+    label: 'Github',
+    emoji: <GithubIcon />,
+    href: '/',
+  },
+  {
+    label: 'LinkedIn',
+    emoji: <LinkedInIcon />,
+    href: '/',
+  },
+  {
+    label: 'Email',
+    emoji: <EmailIcon />,
+    href: '/',
+  },
+]
+
+export { SOCIAL_LINKS, INTERNAL_LINKS }
