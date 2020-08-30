@@ -23,14 +23,13 @@ const LabsPage = (props: Props) => {
 
 async function getBlogPostsPreview() {
   return await getContentDataList('projects').map(
-    ({ id, data: { title, excerpt, cover, technologies, links } }) => {
+    ({ id, data: { title, excerpt, tags, links } }) => {
       return {
         id,
         href: `/labs/${id}`,
         title,
         excerpt,
-        cover,
-        technologies,
+        tags,
         links,
       }
     }

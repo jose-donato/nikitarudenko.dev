@@ -6,7 +6,6 @@ export type TBlogPost = {
   date: string
   tags: string[]
   content: string
-  cover: string
 }
 
 export type TProject = {
@@ -14,9 +13,8 @@ export type TProject = {
   href: string
   title: string
   excerpt: string
-  technologies: string[]
+  tags: string[]
   links: {}[]
-  cover: string
 }
 
 export type TSnippet = {

@@ -9,9 +9,7 @@ type Props = {
   project: TProject & { content: string }
 }
 
-const Project = ({
-  project: { content, title, technologies },
-}: Props): JSX.Element => {
+const Project = ({ project: { content, title, tags } }: Props): JSX.Element => {
   return (
     <Layout>
       <Layout.Header />
@@ -22,7 +20,7 @@ const Project = ({
           </div>
           <div className="grid grid-flow-row gap-2 px-8 py-2 mx-auto mt-16 bg-white rounded-t-md">
             <div className="text-center">
-              {technologies.map((t) => (
+              {tags.map((t) => (
                 <Tag key={t} label={t} />
               ))}
             </div>

@@ -21,7 +21,7 @@ const Labs = ({ projects }: Props): JSX.Element => (
       <section className="min-h-screen pb-8 md:pb-16">
         <div className="max-w-screen-md mx-auto">
           <ul className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {projects.map(({ href, title, id, excerpt, technologies }) => {
+            {projects.map(({ href, title, id, excerpt, tags }) => {
               return (
                 <Card
                   className="block transition duration-200 transform rounded-md shadow-md cursor-pointer font-body hover:bg-gray-200"
@@ -38,7 +38,7 @@ const Labs = ({ projects }: Props): JSX.Element => (
                             {excerpt}
                           </div>
                           <div className="mt-4 ml-auto">
-                            {technologies.map((t) => (
+                            {tags.map((t) => (
                               <Tag key={t} label={t} />
                             ))}
                           </div>
