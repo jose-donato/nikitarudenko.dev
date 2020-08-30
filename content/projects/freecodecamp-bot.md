@@ -1,11 +1,5 @@
 ---
-tech_used:
-- nodejs
-- cheerio
 name: freeCodeCamp Bot
-short_overview: Sends fresh news to a Telegram channel
-description: Sends fresh news to a Telegram channel
-screenshot: "/uploads/sad_robot.jpg"
 links:
 - template: link
   link: google.com
@@ -18,10 +12,6 @@ links:
 gradient: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)'
 title: freeCodeCamp Bot
 excerpt: Delivers fresh news to Telegram
-technologies:
-- nodejs
-- cheerio
-- mongodb
 cover: "/uploads/sad_robot.jpg"
 emoji: <svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><symbol id="d"
   viewBox="-64.5 -64.5 129 129"><g fill="none" stroke="#4285f4" stroke-miterlimit="10"><path
