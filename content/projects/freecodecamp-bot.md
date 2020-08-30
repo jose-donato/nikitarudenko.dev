@@ -12,7 +12,6 @@ links:
 gradient: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)'
 title: freeCodeCamp Bot
 excerpt: Delivers fresh news to Telegram
-cover: "/uploads/sad_robot.jpg"
 emoji: <svg width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><symbol id="d"
   viewBox="-64.5 -64.5 129 129"><g fill="none" stroke="#4285f4" stroke-miterlimit="10"><path
   d="M-64-64H64V64H-64z"/><path d="M36.95 37.82C27.32 46.32 14.2 51 0 51c-14.27 0-27.39-4.62-36.96-13.01C-47.45
