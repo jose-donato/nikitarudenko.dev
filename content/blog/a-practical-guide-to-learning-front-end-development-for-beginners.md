@@ -6,8 +6,6 @@ tags:
 title: A practical guide to learning front end development for beginners
 excerpt: This article is the guide I would have liked to have found when I started
   my journey.
-cover_image: "/uploads/a_practical_guide_to_learning_front_end.jpeg"
-cover: ''
 date: 2019-03-29T21:15:25.000+00:00
 
 ---
