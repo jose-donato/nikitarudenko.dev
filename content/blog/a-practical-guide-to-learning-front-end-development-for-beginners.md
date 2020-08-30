@@ -7,7 +7,7 @@ title: A practical guide to learning front end development for beginners
 excerpt: This article is the guide I would have liked to have found when I started
   my journey.
 cover_image: "/uploads/a_practical_guide_to_learning_front_end.jpeg"
-cover: "/uploads/a_practical_guide_to_learning_front_end.jpeg"
+cover: ''
 date: 2019-03-29T21:15:25.000+00:00
 
 ---
@@ -21,9 +21,7 @@ Please note that these are just the first steps into the front-end universe. It 
 
 > _As a disclaimer, please note that the following resources are not an advertisement. I mention them because they helped me at some point and I personally recommend them. Most of them are free, otherwise, it will be specified._
 
-![Image for post](https://miro.medium.com/max/3600/0*iRQaN3v6i5ggJS7L)
-
-Photo by [Mikito Tateisi](https://unsplash.com/@tateisimikito) on [Unsplash](https://unsplash.com/)
+![Little boy first step.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598802311/nikita-rudenko.dev/little_boy_first_step.jpg "Photo by Mikito Tateisi on Unsplash")
 
 As a starting point, I recommend signing up on [freeCodeCamp](https://www.freecodecamp.org/). And I will base the rest on their curriculum. I consider it to be a great resource for various reasons:
 
@@ -37,9 +35,7 @@ As a starting point, I recommend signing up on [freeCodeCamp](https://www.freeco
 
 ## Now we are all set to start! 🚀
 
-![Image for post](https://miro.medium.com/max/3481/0*kJBjdPn2n9g74Tki)
-
-Photo by [Braden Collum](https://unsplash.com/@bradencollum) on [Unsplash](https://unsplash.com/)
+![Sprint start.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598802312/nikita-rudenko.dev/sprint_start.jpg "Photo by Braden Collum on Unsplash")
 
 # Responsive Web Design
 
@@ -77,9 +73,7 @@ Before moving on to the final projects, I recommend you to do this:
 
 Go and build your final projects and share them 😉
 
-![Image for post](https://miro.medium.com/max/4000/0*FVlnmo4vdmUTl7xe)
-
-Photo by [Jake Ingle](https://unsplash.com/@ingle_jake) on [Unsplash](https://unsplash.com/)
+![Success.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598803123/nikita-rudenko.dev/success.jpg "Photo by Jake Ingle on Unsplash")
 
 # Javascript Algorithms And Data Structures
 
@@ -110,9 +104,7 @@ After you beat it I can say that…
 
 ## **…now you know how to work with JavaScript!** 🎉
 
-![Image for post](https://miro.medium.com/max/5534/0*iMWb3Mbhemrald0k)
-
-Photo by [Pankaj Patel](https://unsplash.com/@pankajpatel) on [Unsplash](https://unsplash.com/)
+![Code.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598803994/nikita-rudenko.dev/code.jpg "Photo by Pankaj Patel on Unsplash")
 
 # Sticking things together
 
@@ -146,13 +138,9 @@ My personal favorites:
 2. [React for beginners](https://reactforbeginners.com/) (paid) by Wes Bos
 3. [React - The Complete Guide](https://www.udemy.com/react-the-complete-guide-incl-redux/?couponCode=ACAD_W) (paid) by Academind
 
-![Image for post](https://miro.medium.com/max/30/0*svDRmbMBy6k8_vAJ?q=20 =4000x2666)
-
 ## **Now you can build anything you want** 🎉
 
-![Image for post](https://miro.medium.com/max/4000/0*svDRmbMBy6k8_vAJ)
-
-Photo by [rawpixel](https://unsplash.com/@rawpixel) on [Unsplash](https://unsplash.com/)
+![Choice.](https://res.cloudinary.com/nikita-rudenko/image/upload/v1598804084/nikita-rudenko.dev/choice.jpg "Photo by rawpixel on Unsplash")
 
 # Moving further
 
@@ -160,7 +148,7 @@ You are a real front-end developer now and have enough skills to build great web
 
 Here are some tips for you on what to do next:
 
-1. Get ideas for a project in the [Take Home Projects ](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/)section on freeCodeCamp.
+1. Get ideas for a project in the [Take Home Projects](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/)section on freeCodeCamp.
 2. Build any project along with a course, then modify and improve it by adding new features.
 3. Tackle D3.js and Node.js to get the next freeCodeCamp certifications!
 4. Read [Eloquent JavaScript](https://eloquentjavascript.net/) and [You Don't Know JS ](https://github.com/getify/You-Dont-Know-JS)to become a JavaScript ninja.
