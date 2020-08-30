@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 
 import { TSpreadProps } from '@typings/commonPropTypes'
 
-import DesktopNav from './DesktopNav'
-import MobileNav from './MobileNav'
+import NavDesktop from './NavDesktop'
+import NavMobile from './NavMobile'
 
 const Header = ({ ...props }: TSpreadProps) => {
   const [isMobile, setIsMobile] = useState(false)
@@ -14,7 +14,7 @@ const Header = ({ ...props }: TSpreadProps) => {
     process.browser && width > 768 ? setIsMobile(false) : setIsMobile(true)
   }, [width])
 
-  return <header {...props}>{isMobile ? <MobileNav /> : <DesktopNav />}</header>
+  return <header {...props}>{isMobile ? <NavMobile /> : <NavDesktop />}</header>
 }
 
 export default Header

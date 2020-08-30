@@ -16,3 +16,9 @@ svg {
     rgba(255, 220, 109, 1) 100%
   );
 }
+
+.hover-bg-grayout:hover,
+.hover-bg-grayout:active,
+.hover-bg-grayout:focus {
+  @apply bg-gray-200 transform transition duration-200
+}

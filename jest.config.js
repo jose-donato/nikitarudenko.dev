@@ -22,5 +22,6 @@ module.exports = {
     '^@styles(.*)$': '<rootDir>/src/styles$1',
     '^@typings(.*)$': '<rootDir>/src/typings$1',
     '^@utils(.*)$': '<rootDir>/src/utils$1',
+    '^@views(.*)$': '<rootDir>/src/views$1',
   },
 }

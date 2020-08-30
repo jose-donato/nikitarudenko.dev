@@ -11,6 +11,7 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:import/typescript",
@@ -27,11 +28,14 @@
     "node": true
   },
   "settings": {
+    "react": {
+      "version": "detect"
+    },
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"]
     },
     "import/resolver": {
-      "typescript": { "directory": "tsconfig.json" }
+      "typescript": { "project": "tsconfig.json" }
     }
   },
   "rules": {

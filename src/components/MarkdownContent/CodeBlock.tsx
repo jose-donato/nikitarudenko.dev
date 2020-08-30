@@ -1,12 +1,17 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 
 import { TRenderProps } from '@typings/commonPropTypes'
 
 import codeTheme from './codeTheme'
 
-const CodeBlock = ({ children }: TRenderProps) => {
+const CodeBlock = ({ children, className }: TRenderProps) => {
   return (
-    <SyntaxHighlighter language="jsx" style={codeTheme}>
+    <SyntaxHighlighter
+      language={className && className.replace(/lang-/, '')}
+      style={codeTheme}
+      showLineNumbers
+      lineNumberStyle={{ color: '#495162', paddingRight: '16px' }}
+    >
       {children}
     </SyntaxHighlighter>
   )
