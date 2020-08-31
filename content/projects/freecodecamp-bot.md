@@ -2,12 +2,10 @@
 name: freeCodeCamp Bot
 links:
 - template: link
-  link: google.com
   label: GitHub
   href: https://github.com/nikita-rudenko/freecodecamp-news-bot
 - template: link
   label: Live
-  link: github.com
   href: https://freecodecamp-news-bot.herokuapp.com/
 gradient: 'linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)'
 title: freeCodeCamp Bot
