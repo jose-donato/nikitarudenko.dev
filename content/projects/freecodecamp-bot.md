@@ -61,7 +61,6 @@ tags:
 - nodejs
 - express
 - mongodb
-- cheerio
 - telegraf
 
 ---
@@ -72,3 +71,5 @@ I love to read freeCodeCamp news and once had an article posted there. It is a g
 ## How is it implemented?
 
 I created a simple **Node.js** app with Express and MongoDB. It gets triggered by a cron job, checks if there are new articles added, and posts them to a Telegram channel. Simple and effective.
+
+![Butter bot](https://media1.tenor.com/images/d9a6b8e7846043ff054cbf785e301b82/tenor.gif?itemid=11658334)
