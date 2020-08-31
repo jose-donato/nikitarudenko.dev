@@ -14,7 +14,10 @@ export type TProject = {
   title: string
   excerpt: string
   tags: string[]
-  links: {}[]
+  links: {
+    href: string
+    label: string
+  }[]
   emoji: string
   gradient?: string
 }

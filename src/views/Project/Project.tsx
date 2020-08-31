@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Project = ({
-  project: { content, title, tags, gradient },
+  project: { content, title, tags, links, gradient },
 }: Props): JSX.Element => {
   return (
     <Layout>
@@ -37,8 +37,13 @@ const Project = ({
               ))}
             </div>
             <div className="grid justify-center grid-flow-col gap-2 p-1">
-              <GithubLink href="//github.com" />
-              <LiveLink href="//google.com" />
+              {links.map(({ href, label }) => {
+                if (label === 'GitHub') {
+                  return <GithubLink key={label} href={href} />
+                } else if (label === 'Live') {
+                  return <LiveLink key={label} href={href} />
+                }
+              })}
             </div>
           </div>
         </section>
