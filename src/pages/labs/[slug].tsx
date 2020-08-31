@@ -25,7 +25,7 @@ export async function getStaticProps({ params }: any) {
   const {
     content,
     id,
-    data: { title, tags },
+    data: { title, tags, emoji, gradient },
   } = await getContentData('projects', params.slug)
 
   return {
@@ -35,6 +35,8 @@ export async function getStaticProps({ params }: any) {
         title,
         tags,
         content,
+        emoji,
+        gradient,
       },
     },
   }

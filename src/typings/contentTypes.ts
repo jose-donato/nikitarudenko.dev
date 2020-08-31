@@ -15,6 +15,8 @@ export type TProject = {
   excerpt: string
   tags: string[]
   links: {}[]
+  emoji: string
+  gradient?: string
 }
 
 export type TSnippet = {
@@ -33,7 +35,7 @@ export type TBlogPostPreview = Pick<
 
 export type TPRojectPreview = Pick<
   TProject,
-  'id' | 'href' | 'title' | 'excerpt'
+  'id' | 'href' | 'title' | 'excerpt' | 'emoji'
 >
 
 export type TSnippetPreview = Pick<

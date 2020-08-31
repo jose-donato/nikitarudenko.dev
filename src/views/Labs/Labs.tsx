@@ -18,7 +18,7 @@ const Labs = ({ projects }: Props): JSX.Element => (
         <Title>Labs</Title>
       </div>
 
-      <section className="min-h-screen pb-8 md:pb-16">
+      <section className="pb-8 md:pb-16">
         <div className="max-w-screen-md mx-auto">
           <ul className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {projects.map(({ href, title, id, excerpt, tags }) => {

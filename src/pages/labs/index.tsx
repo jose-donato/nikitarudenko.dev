@@ -23,7 +23,7 @@ const LabsPage = (props: Props) => {
 
 async function getBlogPostsPreview() {
   return await getContentDataList('projects').map(
-    ({ id, data: { title, excerpt, tags, links } }) => {
+    ({ id, data: { title, excerpt, tags, links, emoji } }) => {
       return {
         id,
         href: `/labs/${id}`,
@@ -31,6 +31,7 @@ async function getBlogPostsPreview() {
         excerpt,
         tags,
         links,
+        emoji,
       }
     }
   )
