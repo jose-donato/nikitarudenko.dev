@@ -9,7 +9,7 @@ links:
   label: Live
   link: github.com
   href: https://freecodecamp-news-bot.herokuapp.com/
-gradient: 'linear-gradient(to top, #30cfd0 0%, #330867 100%)'
+gradient: 'linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)'
 title: freeCodeCamp Bot
 excerpt: Delivers fresh news to Telegram
 emoji: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
