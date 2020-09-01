@@ -3,7 +3,7 @@ tags:
 - vscode
 - typescript
 title: Back & Forth
-excerpt: Tiny VSCode extension with 10k+ installs
+excerpt: VSCode extension with 10k+ installs
 emoji: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform:
   rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid
@@ -35,9 +35,15 @@ links:
 - template: link
   href: https://marketplace.visualstudio.com/items?itemName=nick-rudenko.back-n-forth
   label: Marketplace
-gradient: 'linear-gradient(to top, #09203f 0%, #537895 100%)'
+gradient: 'linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%)'
 
 ---
-## Why?
+## What is the idea?
 
-## How
+I use VSCode as my main IDE. I always felt it lacks a UI element that allows users to navigate through recently opened files as they do in web browsers. I read through the VSCode docs and actually found keyboard shorcuts for doing this. However, I decided to create this extension anyway to reflect their existence in UI too.
+
+## How is it implemented?
+
+I learned VSCode [extension API](https://code.visualstudio.com/api) and found a few repos with popular extensions to see how they work with it. Once I got logic working, I took the icons from Microsoft's [official repository](https://github.com/microsoft/vscode-icons) and configured them to work well with light and dark themes. It allowed me to achieve native user experience. Later I completed it with "return the last edit location" feature which was requested by users.
+
+![Extension in action.](https://github.com/nick-rudenko/back-n-forth/raw/master/img/screenshots/demo.gif "Extension in action")
