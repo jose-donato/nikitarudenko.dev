@@ -9,6 +9,8 @@ excerpt: This article is the guide I would have liked to have found when I start
 date: 2019-03-29T21:15:25.000+00:00
 
 ---
+[Originally posted on Medium](https://medium.com/free-code-camp/a-practical-guide-to-learning-front-end-development-for-beginners-da6516505e41)
+
 I started my coding journey in spring 2018, a bit less than one year ago. I earned some programming skills since that time but still, I understand there are many more things to learn ahead. Anyway, I decided to gather these tips in a single place to help future developers on their path. This article is the guide I would have liked to have found when I started my journey.
 
 # **Before Starting**
