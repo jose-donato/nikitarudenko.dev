@@ -41,7 +41,7 @@ const Project = ({
                 return label === 'GitHub' ? (
                   <GithubLink key={label} href={href} />
                 ) : (
-                  <OtherLink key={label} href={href} />
+                  <OtherLink key={label} href={href} label={label} />
                 )
               })}
             </div>
