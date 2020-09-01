@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { useState } from 'react'
 
-import { INTERNAL_LINKS } from '@constants/links'
+import { INTERNAL_LINKS_LIST } from '@constants/links'
 
 import HeaderLink from './HeaderLink'
 import NavMobileIcon from './NavMobileIcon'
@@ -25,7 +25,7 @@ const NavMobile = () => {
           )}
         >
           <div className="flex flex-col items-center gap-4 text-lg font-bold font-body">
-            {INTERNAL_LINKS.map(({ href, label, emoji }) => {
+            {INTERNAL_LINKS_LIST.map(({ href, label, emoji }) => {
               return (
                 <HeaderLink
                   key={label}
