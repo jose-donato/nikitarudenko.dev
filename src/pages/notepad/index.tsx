@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import seo from '@constants/seo'
 import { TSnippet } from '@typings/contentTypes'
 import { getContentDataList } from '@utils/markdownParser'
 import Notepad from '@views/Notepad'
@@ -14,7 +15,12 @@ const NotepadPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Notepad | Nikita Rudenko</title>
+        <title>{seo.notepad.title}</title>
+        <meta
+          key="description"
+          name="description"
+          content={seo.notepad.content}
+        />
       </Head>
       <Notepad snippets={snippets} />
     </>

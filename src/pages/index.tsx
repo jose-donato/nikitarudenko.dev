@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import seo from '@constants/seo'
 import {
   TBlogPostPreview,
   TPRojectPreview,
@@ -20,7 +21,8 @@ const HomePage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Nikita Rudenko</title>
+        <title>{seo.home.title}</title>
+        <meta key="description" name="description" content={seo.home.content} />
       </Head>
       <Home blogPosts={blogPosts} projects={projects} snippets={snippets} />
     </>

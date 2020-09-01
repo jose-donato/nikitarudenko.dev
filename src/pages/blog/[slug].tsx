@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { NAME } from '@constants/seo'
 import { TBlogPost } from '@typings/contentTypes'
 import { getContentData, getPageSlugs } from '@utils/markdownParser'
 import BlogPost from '@views/BlogPost'
@@ -14,7 +15,10 @@ const BlogPostPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>{blogPost.title} | Nikita Rudenko</title>
+        <title>
+          {blogPost.title} | {NAME}
+        </title>
+        <meta key="description" name="description" content={blogPost.excerpt} />
       </Head>
       <BlogPost blogPost={blogPost} />
     </>
