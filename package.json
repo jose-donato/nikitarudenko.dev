@@ -2,7 +2,7 @@
   "name": "nikitarudenko.dev",
   "author": "Nikita Rudenko",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -28,7 +28,6 @@
     "@iconify/icons-noto": "^1.0.11",
     "@iconify/react": "^1.1.3",
     "@react-hook/window-size": "^3.0.7",
-    "asturur-noto-emoji": "^6.0.0",
     "clsx": "^1.1.1",
     "gray-matter": "^4.0.2",
     "markdown-to-jsx": "^6.11.4",
@@ -43,8 +42,8 @@
     "@types/jest": "^25.1.4",
     "@types/markdown-to-jsx": "^6.11.2",
     "@types/node": "^13.13.15",
-    "@types/react": "^16.9.48",
-    "@types/react-syntax-highlighter": "^11.0.4",
+    "@types/react": "^16.9.49",
+    "@types/react-syntax-highlighter": "^11.0.5",
     "@types/testing-library__react": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
@@ -52,7 +51,7 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-import-resolver-typescript": "^2.2.1",
+    "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -64,7 +63,7 @@
     "lint-staged": "^10.2.13",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.1",
-    "tailwindcss": "^1.7.5",
+    "tailwindcss": "^1.7.6",
     "typescript": "^3.9.7"
   }
 }
