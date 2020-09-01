@@ -44,12 +44,13 @@ async function getBlogPostsPreview() {
 async function getProjectsPreview() {
   return await getContentDataList('projects')
     .slice(0, 3)
-    .map(({ id, data: { title, excerpt } }) => {
+    .map(({ id, data: { title, excerpt, emoji } }) => {
       return {
         id,
         href: `/labs/${id}`,
         title,
         excerpt,
+        emoji,
       }
     })
 }

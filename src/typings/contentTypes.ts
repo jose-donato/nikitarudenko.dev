@@ -6,7 +6,6 @@ export type TBlogPost = {
   date: string
   tags: string[]
   content: string
-  cover: string
 }
 
 export type TProject = {
@@ -14,9 +13,13 @@ export type TProject = {
   href: string
   title: string
   excerpt: string
-  technologies: string[]
-  links: {}[]
-  cover: string
+  tags: string[]
+  links: {
+    href: string
+    label: string
+  }[]
+  emoji: string
+  gradient?: string
 }
 
 export type TSnippet = {
@@ -35,7 +38,7 @@ export type TBlogPostPreview = Pick<
 
 export type TPRojectPreview = Pick<
   TProject,
-  'id' | 'href' | 'title' | 'excerpt'
+  'id' | 'href' | 'title' | 'excerpt' | 'emoji'
 >
 
 export type TSnippetPreview = Pick<

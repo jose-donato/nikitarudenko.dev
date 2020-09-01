@@ -17,7 +17,7 @@ const Blog = ({ blogPosts }: Props): JSX.Element => (
         <Title>Blog</Title>
       </div>
 
-      <section className="min-h-screen pb-8 md:pb-16">
+      <section className="h-full pb-8 md:pb-16">
         <div className="max-w-screen-md mx-auto">
           <ul>
             {blogPosts.map(({ href, title, date, id, excerpt }) => {

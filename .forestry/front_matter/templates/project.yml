@@ -17,15 +17,15 @@ fields:
     schema:
       format: markdown
   label: Excerpt
-- name: technologies
+- name: emoji
+  type: text
+  config:
+    required: true
+  label: Emoji
+- name: tags
   type: tag_list
   default: []
-  label: Technologies
-- name: cover
-  type: file
-  config:
-    maxSize: 64
-  label: Cover
+  label: Tags
 - name: links
   type: blocks
   label: Links
@@ -40,6 +40,5 @@ fields:
     required: false
   label: Gradient
 pages:
+- content/projects/back-forth.md
 - content/projects/freecodecamp-bot.md
-- content/projects/natours.md
-- content/projects/sheepish-io.md

@@ -16,15 +16,13 @@ const About = ({ data }: Props): JSX.Element => {
   return (
     <Layout>
       <Layout.Header />
-      <Layout.Body>
-        <section className="min-h-screen px-4 py-8 md:py-16 bg-monochrome-400 gradient-light">
-          <div className="grid max-w-screen-md grid-cols-1 gap-5 mx-auto sm:grid-cols-2">
-            <BioCard avatar={avatar} bio={bio} />
-            <StackCard stack={stack} />
-            <LearningCard learning={learning} />
-            <SocialBlock />
-          </div>
-        </section>
+      <Layout.Body className="px-4 py-8 md:py-16 bg-monochrome-400 gradient-light">
+        <div className="grid max-w-screen-md grid-cols-1 gap-5 mx-auto sm:grid-cols-2">
+          <BioCard avatar={avatar} bio={bio} />
+          <StackCard stack={stack} />
+          <LearningCard learning={learning} />
+          <SocialBlock />
+        </div>
       </Layout.Body>
       <Layout.Footer />
     </Layout>

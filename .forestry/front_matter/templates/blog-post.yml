@@ -16,11 +16,6 @@ fields:
     schema:
       format: markdown
   label: Excerpt
-- name: cover
-  type: file
-  config:
-    maxSize: 64
-  label: Cover
 - name: date
   type: datetime
   label: Date
@@ -37,5 +32,3 @@ fields:
   label: Tags
 pages:
 - content/blog/a-practical-guide-to-learning-front-end-development-for-beginners.md
-- content/blog/configuring-vscode-for-react-development.md
-- content/blog/don-t-mess-with-css.md
