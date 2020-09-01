@@ -40,4 +40,5 @@ fields:
     required: false
   label: Gradient
 pages:
+- content/projects/back-forth.md
 - content/projects/freecodecamp-bot.md
