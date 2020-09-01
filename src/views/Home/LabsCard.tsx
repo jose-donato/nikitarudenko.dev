@@ -17,13 +17,11 @@ const LabsCard = ({ projects }: Props) => {
             <li key={id}>
               <Link href={href}>
                 <a className="block p-3 transition-colors duration-200 rounded-md font-body hover-bg-grayout">
-                  <div className="flex items-baseline">
-                    <div className="mr-2 text-2xl">
+                  <div className="flex items-center text-base font-bold md:text-lg text-monochrome-900">
+                    <span className="mb-1 mr-2">
                       <EmojiSVG src={emoji} />
-                    </div>
-                    <div className="text-base font-bold md:text-lg text-monochrome-900">
-                      {title}
-                    </div>
+                    </span>
+                    <span>{title}</span>
                   </div>
                   <div className="text-sm font-bold md:text-base text-monochrome-400">
                     {excerpt}

@@ -1,4 +1,4 @@
-import { GithubLink, LiveLink } from '@components/ExtLinks'
+import { GithubLink, OtherLink } from '@components/ExtLinks'
 import Layout from '@components/Layout'
 import MarkdownContent from '@components/MarkdownContent'
 import Tag from '@components/Tag'
@@ -38,11 +38,11 @@ const Project = ({
             </div>
             <div className="grid justify-center grid-flow-col gap-2 p-1">
               {links.map(({ href, label }) => {
-                if (label === 'GitHub') {
-                  return <GithubLink key={label} href={href} />
-                } else if (label === 'Live') {
-                  return <LiveLink key={label} href={href} />
-                }
+                return label === 'GitHub' ? (
+                  <GithubLink key={label} href={href} />
+                ) : (
+                  <OtherLink key={label} href={href} />
+                )
               })}
             </div>
           </div>

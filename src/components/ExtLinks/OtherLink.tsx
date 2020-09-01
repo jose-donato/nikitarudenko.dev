@@ -6,7 +6,7 @@ type Props = {
   href: string
 }
 
-const LiveLink = ({ href }: Props) => {
+const OtherLink = ({ href }: Props) => {
   return (
     <ExtLink
       className="bg-blue-700"
@@ -17,4 +17,4 @@ const LiveLink = ({ href }: Props) => {
   )
 }
 
-export default LiveLink
+export default OtherLink
