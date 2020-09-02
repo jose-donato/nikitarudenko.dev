@@ -148,7 +148,7 @@ You are a real front-end developer now and have enough skills to build great web
 
 Here are some tips for you on what to do next:
 
-1. Get ideas for a project in the [Take Home Projects](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/)section on freeCodeCamp.
+1. Get ideas for a project in the [Take Home Projects](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/) section on freeCodeCamp.
 2. Build any project along with a course, then modify and improve it by adding new features.
 3. Tackle D3.js and Node.js to get the next freeCodeCamp certifications!
 4. Read [Eloquent JavaScript](https://eloquentjavascript.net/) and [You Don't Know JS ](https://github.com/getify/You-Dont-Know-JS)to become a JavaScript ninja.
