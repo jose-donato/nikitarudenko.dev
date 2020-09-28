@@ -4,7 +4,7 @@ tags:
 - react
 - starter
 title: Next.js Starter
-excerpt: A good starting point for a project of any scale
+excerpt: Good starting point for your Next project
 emoji: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform:
   rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid
