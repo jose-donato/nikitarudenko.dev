@@ -1,10 +1,10 @@
 ---
 tags:
-- next
+- nextjs
 - react
 - starter
 title: Next.js Starter
-excerpt: A Next.js project starter with great intital DX setup
+excerpt: A good starting point for a project of any scale
 emoji: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   aria-hidden="true" focusable="false" width="1em" height="1em" style="-ms-transform:
   rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid
@@ -73,7 +73,7 @@ emoji: '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1
 links:
 - template: link
   href: https://github.com/nikita-rudenko/nextjs-starter
-  label: Github
+  label: GitHub
 gradient: ''
 
 ---
