@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import seo from '@constants/seo'
 import { TProject } from '@typings/contentTypes'
 import { getContentDataList } from '@utils/markdownParser'
 import Labs from '@views/Labs'
@@ -14,7 +15,8 @@ const LabsPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Labs | Nikita Rudenko</title>
+        <title>{seo.labs.title}</title>
+        <meta key="description" name="description" content={seo.labs.content} />
       </Head>
       <Labs projects={projects} />
     </>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import seo from '@constants/seo'
 import { TAboutPageData } from '@typings/contentTypes'
 import { getContentData } from '@utils/markdownParser'
 import About from '@views/About'
@@ -12,7 +13,12 @@ const AboutPage = ({ data }: Props) => {
   return (
     <>
       <Head>
-        <title>Nikita Rudenko</title>
+        <title>{seo.about.title}</title>
+        <meta
+          key="description"
+          name="description"
+          content={seo.about.content}
+        />
       </Head>
       <About data={data} />
     </>

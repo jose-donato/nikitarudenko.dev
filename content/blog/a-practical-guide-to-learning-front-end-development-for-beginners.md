@@ -11,7 +11,7 @@ date: 2019-03-29T21:15:25.000+00:00
 ---
 [Originally posted on Medium](https://medium.com/free-code-camp/a-practical-guide-to-learning-front-end-development-for-beginners-da6516505e41)
 
-I started my coding journey in spring 2018, a bit less than one year ago. I earned some programming skills since that time but still, I understand there are many more things to learn ahead. Anyway, I decided to gather these tips in a single place to help future developers on their path. This article is the guide I would have liked to have found when I started my journey.
+I started my coding journey in spring 2018. I earned some programming skills since that time but still, I understand there are many more things to learn ahead. Anyway, I decided to gather these tips in a single place to help future developers on their path. This article is the guide I would have liked to have found when I started my journey.
 
 # **Before Starting**
 
@@ -148,7 +148,7 @@ You are a real front-end developer now and have enough skills to build great web
 
 Here are some tips for you on what to do next:
 
-1. Get ideas for a project in the [Take Home Projects](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/)section on freeCodeCamp.
+1. Get ideas for a project in the [Take Home Projects](https://learn.freecodecamp.org/coding-interview-prep/take-home-projects/) section on freeCodeCamp.
 2. Build any project along with a course, then modify and improve it by adding new features.
 3. Tackle D3.js and Node.js to get the next freeCodeCamp certifications!
 4. Read [Eloquent JavaScript](https://eloquentjavascript.net/) and [You Don't Know JS ](https://github.com/getify/You-Dont-Know-JS)to become a JavaScript ninja.
