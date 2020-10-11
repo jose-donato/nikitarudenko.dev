@@ -5,7 +5,8 @@ title: Array Shuffle
 excerpt: Based on Fisher–Yates shuffle algorithm
 
 ---
-    function shuffle(arr) {
+```js
+function shuffle(arr) {
       // Consider a use of deep copy
       const array = [...arr];
       const lastElIndex = array.length - 1;
@@ -20,3 +21,4 @@ excerpt: Based on Fisher–Yates shuffle algorithm
     
       return array;
     }
+```
