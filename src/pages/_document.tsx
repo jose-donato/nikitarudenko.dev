@@ -4,7 +4,9 @@ class Document extends NextDocument<{ css: string }> {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
+        </Head>
         <body>
           <script src="/noflash.js" />
           <Main />
